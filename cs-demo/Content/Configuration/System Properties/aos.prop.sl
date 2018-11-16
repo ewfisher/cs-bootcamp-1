@@ -2,16 +2,16 @@ namespace: ''
 properties:
   - script_location: /tmp
   - vcenter_host: 10.0.46.10
-  - vcenter_user: "capa1\\1010-capa1user"
+  - vcenter_user: "Capa1\\1213-capa1user"
   - vcenter_password:
       value: Automation123
       sensitive: true
   - vcenter_image: Ubuntu
   - vcenter_datacenter: Capa1 Datacenter
-  - vcenter_folder: Students
+  - vcenter_folder: Students/fishere
   - vm_username: root
   - vm_password:
-      value: admin@123
+      value: '********'
       sensitive: true
   - script_deploy_war: 'http://vmdocker.hcm.demo.local:36980/job/AOS-repo/ws/deploy_war.sh'
   - script_install_java: 'http://vmdocker.hcm.demo.local:36980/job/AOS-repo/ws/install_java.sh'

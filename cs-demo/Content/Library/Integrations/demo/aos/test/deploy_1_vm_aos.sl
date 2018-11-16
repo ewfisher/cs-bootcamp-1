@@ -2,12 +2,13 @@ namespace: io.cloudslang.demo.aos.test
 flow:
   name: deploy_1_vm_aos
   inputs:
-    - username: "${get_sp('vm_username')}"
-    - password: "${get_sp('vm_password')}"
+    - username: root
+    - password: admin@123
   workflow:
     - deploy_vm:
         do:
-          io.cloudslang.demo.vmware.deploy_vm: []
+          io.cloudslang.demo.vmware.deploy_vm:
+            - prefix: ewf-
         publish:
           - tomcat_host: '${ip}'
         navigate:
